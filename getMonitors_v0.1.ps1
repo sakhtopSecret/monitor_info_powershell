@@ -111,7 +111,7 @@ ForEach ($Monitor in $Monitors)
 }
 
 # Export array to the .csv file for each user
-$Monitor_Array | Export-Csv -Path "\\sakhalin2.ru\se\Common\IT\Monitor collection info\$userName.$PCName.MonitorInfo.csv" -Append -NoTypeInformation -Force
+$Monitor_Array | Export-Csv -Path "~/MonInfo" -Append -NoTypeInformation -Force
 
 # Look for ExecutionPolicy error
 pause;
